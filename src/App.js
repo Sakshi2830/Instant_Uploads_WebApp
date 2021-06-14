@@ -1,19 +1,34 @@
-import React, { useState } from 'react';
-import ImageGrid from './comps/ImageGrid';
-import Modal from './comps/Modal';
-import Title from './comps/Title';
-import UploadForm from './comps/uploadForm';
+import React from 'react';
+// import ImageGrid from './comps/ImageGrid';
+// import Modal from './comps/Modal';
+// import Title from './comps/Title';
+// import UploadForm from './comps/uploadForm';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import { AuthProvider } from './context/AuthContext';
+import PrivateRoute from './comps/PrivateRoute';
+import Dashboard from './comps/Dashboard';
+import Login from './comps/LogIn';
+import Signup from './comps/Signup';
+import ForgotPassword from './comps/ForgotPassword';
+
 
 
 function App() {
-  const [selectedImg, setSelectedImg] = useState(null);
+  
 
   return (
+    
     <div className="App">
-      <Title/>
-      <UploadForm/>
-      <ImageGrid setSelectedImg={setSelectedImg} />
-      { selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} /> }
+      <Router>
+        <AuthProvider>
+          <Switch>
+            <PrivateRoute exact path="/" component={Dashboard} />
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/signup" component={Signup} />
+            <Route exact path="/forgot-Password" component={ForgotPassword} />
+          </Switch>
+        </AuthProvider>
+      </Router>
     </div>
   );
 }

@@ -2,6 +2,7 @@
   import firebase from 'firebase/app';
   import 'firebase/storage';
   import 'firebase/firestore';
+  import  'firebase/auth'
 
 
   var firebaseConfig = {
@@ -16,7 +17,15 @@
   firebase.initializeApp(firebaseConfig);
 
   const projectStorage = firebase.storage();
+
+  //initializing firestore
   const projectFirestore = firebase.firestore();
+
+//firebase server timestamp
   const timestamp = firebase.firestore.FieldValue.serverTimestamp;
 
-  export{projectStorage,projectFirestore,timestamp};
+  // firebase auth init
+  const auth = firebase.auth();
+
+  // exporting the above to use in diff react components
+  export{projectStorage,projectFirestore,timestamp,auth};

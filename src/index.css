@@ -101,7 +101,7 @@ label:hover{
   /* padding controls height, will always be perfectly square regardless of width */
   position: relative;
   opacity: 0.8;
-  border: 3px solid rgb(160, 86, 86);
+  border: 5px solid rgb(169, 99, 99);
   border-radius: 0.5rem;
   transform: scale(1.02);
   box-shadow: 3px 3px 6px #38373785;
@@ -133,4 +133,26 @@ label:hover{
   box-shadow: 3px 5px 7px rgba(0,0,0,0.5);
   border: 3px solid white;
   border-radius: 1rem;
+}
+
+
+ .del-btn:hover{
+   background: rgba(250, 222, 227, 0.89);
+  color: rgb(154, 63, 63);
+  transform: scale(1.02);
+  box-shadow: 3px 3px 6px #38373785;
+}
+.loginForm,
+.signUpform{
+  display: block;
+  border: 2px;
+  border: 2px solid rgb(192, 80, 99);
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 3px 3px 6px #38373785;
+}
+
+
+.SignUpCard{
+color: crimson;
 }

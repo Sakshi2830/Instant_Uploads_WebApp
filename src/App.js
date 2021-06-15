@@ -1,8 +1,4 @@
 import React from 'react';
-// import ImageGrid from './comps/ImageGrid';
-// import Modal from './comps/Modal';
-// import Title from './comps/Title';
-// import UploadForm from './comps/uploadForm';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import { AuthProvider } from './context/AuthContext';
 import PrivateRoute from './comps/PrivateRoute';

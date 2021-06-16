@@ -21,8 +21,8 @@ const LogoutBtn = () => {
           <div className="user">
           <strong>User:</strong> {currentUser.email}
           </div>
-               <div className="text-center logoutbtn">
-               <Button variant="link" onClick={handleLogout}>Logout</Button>
+               <div >
+               <Button variant="link" className="logoutbtn" onClick={handleLogout}>Logout</Button>
                {error && <Alert variant="danger">{error}</Alert>}
          
            </div>

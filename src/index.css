@@ -101,7 +101,7 @@ label:hover{
   /* padding controls height, will always be perfectly square regardless of width */
   position: relative;
   opacity: 0.8;
-  border: 5px solid rgb(169, 99, 99);
+  border: 2px solid rgb(169, 99, 99);
   border-radius: 0.5rem;
   transform: scale(1.02);
   box-shadow: 3px 3px 6px #38373785;
@@ -143,16 +143,94 @@ label:hover{
   box-shadow: 3px 3px 6px #38373785;
 }
 .loginForm,
-.signUpform{
+.signUpform,.forgotPaswd{
   display: block;
   border: 2px;
-  border: 2px solid rgb(192, 80, 99);
   border-radius: 1rem;
   text-align: center;
-  box-shadow: 3px 3px 6px #38373785;
+  box-shadow:2px 3px 3px 4px #38373785;
+  max-width: 50vw;
+  margin: 8vh auto;
+  padding: 20px;
+  font-family: 'Dancing Script', cursive;
 }
 
 
 .SignUpCard{
-color: crimson;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    color:black;
+    box-shadow: 2px 2px 3px 3px #38373785;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    font-size: larger;
+    }
+    #email,#password,#password-confirm{
+      text-align: left;
+      padding-left: 10px;
+      line-height: 2px;
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    .inputField{
+      padding: .37rem .75rem;
+      display: block;
+      font-size: 1rem;
+      font-weight: 200;
+      line-height: 0.25;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #787a7b;
+      border-radius: .25rem;
+      width: 80%;
+      transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;  
+    }
+    .instant-up{
+
+      color: rgb(167, 49, 89);
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+
+    .buttonss{
+      border: 2px solid rgb(192, 80, 99);
+      border-radius: 5px;
+      width:100%;
+      color: #fff;
+      background-color:rgb(192, 80, 99) ;
+      margin-top: 7px;
+      font-family: 'Dancing Script', cursive;
+    }    
+
+    .footer{
+      margin-top: 0.5rem;
+      text-align: center!important;
+      width: 100%!important;
+      box-sizing: border-box;
+      color: black;
+      font-size: larger;
+    }
+    a{
+    color: rgb(132, 40, 71);
+    text-decoration: none;
+    background-color: transparent;
+    }
+
+    .user{
+      font-family: cursive;
+      color: rgb(191, 108, 136) ;
+    }
+.logoutbtn{
+  border: 2px solid rgb(192, 80, 99);
+  color: #fff;
+  background-color:rgb(192, 80, 99);
+  border-radius: 0.5rem;
+  font-family: 'Dancing Script', cursive;
+}
+.del-btn{ 
+  box-shadow: 1px 1px 3px black;
+  width: 50px;
+  padding: 6px;
 }

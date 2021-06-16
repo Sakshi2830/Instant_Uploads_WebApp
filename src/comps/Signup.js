@@ -35,7 +35,7 @@ export default function Signup() {
   return ( <div className="signUpform">
   <Card className="SignUpCard">
     <Card.Body className="mt-4">
-      <h2 className="text-center">Sign Up</h2>
+      <h2 className="instant-up">Instant Uploads</h2>
           {/* {currentUser && console.log(currentUser.email)} */}
       {error && <Alert variant="danger">{error}</Alert>}
       <Form 
@@ -43,7 +43,7 @@ export default function Signup() {
       >
         <Form.Group id="email">
           <h4>Email</h4>
-          <Form.Control className="inputField" type="email" ref={emailRef} required />
+          <Form.Control className="inputField" required placeholder="Enter your email address" type="email" ref={emailRef} required />
         </Form.Group>
         <Form.Group id="password">
           <h4>Password</h4>
@@ -55,13 +55,13 @@ export default function Signup() {
         </Form.Group>
         <Button 
         disabled={loading}
-         className="w-100" type="submit">
+         className="buttonss" type="submit">
           Sign Up
         </Button>
       </Form>
     </Card.Body>
   </Card>
-  <div className="w-100 text-center mt-2">
+  <div className="footer">
     Already have an account?
      <Link to="/login">
         Log In

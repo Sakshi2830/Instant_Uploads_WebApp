@@ -134,7 +134,7 @@ label:hover{
   border: 3px solid white;
   border-radius: 1rem;
 }
-
+/* Adding css to the authentication page */
 
  .del-btn:hover{
    background: rgba(250, 222, 227, 0.89);

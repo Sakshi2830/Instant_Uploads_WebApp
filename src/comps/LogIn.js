@@ -38,7 +38,7 @@ export default function Login() {
       >
         <Form.Group id="email">
           <h4>Email</h4>
-          <Form.Control className="inputField" required placeholder="Enter your email address"  type="email" ref={emailRef} required />
+          <Form.Control className="inputField"  placeholder="Enter your email address"  type="email" ref={emailRef} required />
         </Form.Group>
         <Form.Group id="password">
           <h4>Password</h4>

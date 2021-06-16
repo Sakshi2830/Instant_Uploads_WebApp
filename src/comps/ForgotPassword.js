@@ -40,7 +40,7 @@ export default function ForgotPassword() {
             >
               <Form.Group id="email">
                 <p className="text-center">Email address</p>
-                <Form.Control className="inputField" required placeholder="Enter your email address"  type="email" ref={emailRef} required />
+                <Form.Control className="inputField"  placeholder="Enter your email address"  type="email" ref={emailRef} required />
               </Form.Group>
             
               <Button 
